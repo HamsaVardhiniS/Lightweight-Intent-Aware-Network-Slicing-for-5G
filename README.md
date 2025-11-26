@@ -1,17 +1,24 @@
 Lightweight Intent-Aware Network Slicing for 5G
 
-This project implements a lightweight AI-driven framework for intent-aware and real-time network slicing in 5G. It addresses challenges in resource allocation and slice admission under dynamic traffic and heterogeneous QoS/SLA requirements. The system integrates NLP for intent extraction, GNNs for KPI prediction, RL for adaptive resource allocation, and XAI for transparent decision-making.
+Problem Statement:
+    Efficient and intelligent resource allocation and slice admission in 5G networks is challenging due to dynamic traffic, diverse service requirements (eMBB, URLLC, mIoT) under strict Quality of Service (QoS) and Service Level Agreement (SLA) constraints.  Real-time, adaptive, and scalable slicing solutions are required, especially those capable of generalizing across varying network topologies and workloads.
 
-Modules
+Objective:
 
-Intent Parser (NLP): Converts natural language slice requests into structured JSON intent.
+To design and simulate a lightweight, AI-driven network slicing framework that enables real-time and intent-aware slicing decisions using:
+Natural Language Processing (NLP) for extracting user intent and QoS needs,
+Graph Neural Networks (GNN) for predicting slice KPIs such as delay, jitter, and loss,
+Reinforcement Learning (RL) for adaptive resource allocation and admission control,
+Explainable AI (XAI) for transparency in slice decisions.
 
-Topology & Traffic Simulator: Builds synthetic 5G network topologies and traffic states using DGL.
+Modules & Workflow:
 
-KPI Predictor (GNN): Predicts slice KPIs (delay, jitter, loss) using R-GCN or GAT.
+1. Intent Parser (NLP Layer): Translates natural language service requests into structured JSON intent.
+2. Topology & Traffic Simulator: Models dynamic traffic and network states as heterogeneous graphs using DGL.
+3. KPI Predictor (GNN): Uses R-GCN/GAT architectures to forecast slice-level performance metrics.
+4. RL-Based Admission & Allocation: Learns optimal policies for resource distribution using PPO/DQN algorithms.
+5. Slice Lifecycle Manager: Monitors SLA adherence and triggers adaptive scaling/rescheduling.
+6. Explainability Layer: Employs Captum and SHAP for insight into model decisions and slice performance.
 
-RL-Based Admission & Allocation: Learns policies for slice admission, bandwidth assignment, and routing using PPO/DQN.
-
-Slice Lifecycle Manager: Monitors SLA adherence and manages slice lifecycle events.
-
-Explainability Layer: Provides explanations for GNN and RL decisions using Captum and SHAP.
+Reference:
+	GNNetSlice: https://doi.org/10.1016/j.comcom.2025.108044
