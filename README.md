@@ -1,5 +1,4 @@
 Lightweight Intent-Aware Network Slicing for 5G
-Abstract
 
 This project implements a lightweight AI-driven framework for intent-aware and real-time network slicing in 5G. It addresses challenges in resource allocation and slice admission under dynamic traffic and heterogeneous QoS/SLA requirements. The system integrates NLP for intent extraction, GNNs for KPI prediction, RL for adaptive resource allocation, and XAI for transparent decision-making.
 
