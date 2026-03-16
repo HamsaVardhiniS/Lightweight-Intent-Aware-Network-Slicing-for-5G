@@ -2,13 +2,13 @@
 
 ---
 
-### 🚨 **Problem Statement**
+### **Problem Statement**
 Efficient and intelligent resource allocation and slice admission in 5G networks is challenging due to dynamic traffic, diverse service requirements (*eMBB, URLLC, mIoT*), and strict **Quality of Service (QoS)** and **Service Level Agreement (SLA)** constraints.  
 Real-time, adaptive, and scalable slicing solutions are required, especially those capable of generalizing across varying network topologies and workloads.
 
 ---
 
-### 🎯 **Objective**
+###  **Objective**
 To design and simulate a **lightweight, AI-driven network slicing framework** that enables real-time, intent-aware slicing decisions using:
 
 - **Natural Language Processing (NLP)** – for extracting user intent and QoS needs  
@@ -18,7 +18,7 @@ To design and simulate a **lightweight, AI-driven network slicing framework** th
 
 ---
 
-### 🧱 **Modules & Workflow**
+### **Modules & Workflow**
 
 1. **Intent Parser (NLP Layer)**  
    Translates natural language service requests into structured JSON intent.
@@ -43,5 +43,5 @@ To design and simulate a **lightweight, AI-driven network slicing framework** th
 
 ---
 
-### 📚 **Reference**
+###  **Reference**
 GNNetSlice — [Click Here](https://doi.org/10.1016/j.comcom.2025.108044)
